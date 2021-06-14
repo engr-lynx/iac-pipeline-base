@@ -1,0 +1,13 @@
+archi:
+  id: IacPipelineBasePipeline
+  pipeline:
+    repo:
+      type: CodeCommit
+      name: iac-pipeline-base
+      create: true
+    build:
+      compute: Small
+    validate:
+      compute: Small
+      emails:
+      - techie@lynx.rocks
